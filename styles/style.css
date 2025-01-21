@@ -50,6 +50,47 @@ nav ul li:hover{
     display: none;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../images/background-home.png);
+    background-size: cover;
+}
+#background-home{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+}
+#banner{
+    margin: 100px;
+    width: 831px;
+    height: 533px;
+}
+h1{
+    font-size: 64px;
+}
+p{
+    font-size: 36px;
+    font-weight: 200;
+}
+input{
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    color: aliceblue;
+    width: 250px;
+    height: 66px;border: 1px solid #fff;
+    box-shadow: none;
+    background: none;
+}
+input:hover{
+    color: black;
+    background-color: aliceblue;
+}
 @media (max-width:734px){
     #navigation{
         display: none;
@@ -71,6 +112,22 @@ nav ul li:hover{
         height: 5px;
         margin: 3px 0px;
         background-color: #3B3748;
+    }
+
+    main{
+    height: 800px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    p{
+        font-size: 26px;
+        font-weight: 200;
+    }
+    #banner{
+        margin: 40px;
+        width: 531px;
+        height: 533px;
     }
 }
 
