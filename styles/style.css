@@ -9,7 +9,7 @@ body{
     align-items: center;
     width: 100%;
 }
-
+/*CABEÇALHO-------------------------------------------------------*/
 header{
     width: 100%;
     height: 150px;
@@ -41,15 +41,19 @@ nav ul li:hover{
     color: white;
     background-color: #3B3748;
 }
+
+/*FLEXBOX DO HEADER*/
 #navigation, #title{
     display: flex;
     align-items: center;
 }
 
+
 .menu-sandwich{
     display: none;
 }
 
+/*CORPO PRINCIPAL DA PÁGINA------------------------------------------*/
 main{
     display: flex;
     justify-content: center;
@@ -78,6 +82,7 @@ p{
     font-weight: 200;
 }
 input{
+    padding: 0px;
     font-size: 28px;
     font-family: "Inter", sans-serif;
     font-weight: 200;
@@ -91,7 +96,14 @@ input:hover{
     color: black;
     background-color: aliceblue;
 }
+
+
+
+/*MEDIA QUERIES DAS TELAS---------------------------------------------*/
+
 @media (max-width:734px){
+    
+    
     #navigation{
         display: none;
     }
@@ -99,6 +111,8 @@ input:hover{
         height: 100px;
     }
     
+
+    /*MENU SANDUÍCHE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
     .menu-sandwich{
         display: flex;
         flex-direction: column;
@@ -114,6 +128,8 @@ input:hover{
         background-color: #3B3748;
     }
 
+
+    /*CORPO PRINCIPAL DA PÁGINA>>>>>>>>>>>>>>>>>*/
     main{
     height: 800px;
     }
@@ -121,13 +137,14 @@ input:hover{
         font-size: 45px;
     }
     p{
-        font-size: 26px;
+        font-size: 30px;
+        line-height: 50px;
         font-weight: 200;
     }
     #banner{
         margin: 40px;
-        width: 531px;
-        height: 533px;
+        width: 80%;
+        height: 733px;
     }
 }
 
@@ -140,6 +157,11 @@ input:hover{
     nav ul li{
         display: block;
         padding: 5px 12px;
+    }
+
+
+    #banner{
+        margin: 80px;
     }
 }
 
