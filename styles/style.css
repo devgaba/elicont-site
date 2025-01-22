@@ -33,14 +33,15 @@ nav ul {
     padding: 0px;
 }
 
-nav ul li{
+nav ul li a{
+    text-decoration: none;
     padding: 10px 30px;
     font-size: 20px;
     font-family: "Inter", sans-serif;
     display: inline-block;
     color: #3B3748;
 }
-nav ul li:hover{
+nav ul li a:hover{
     color: white;
     background-color: #3B3748;
 }
@@ -65,7 +66,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 880px;
+    height: 900px;
     color: aliceblue;
     font-family: "Inter", sans-serif;
     width: 100%;
@@ -102,49 +103,13 @@ input:hover{
 
 
 /*SECTION - SERVICOS*/
-.servicos{
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
-    width: 100%;
-    height: 880px;
-    background-color: #3B3748;
-}
-#area-assessorias{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
-#cards{
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card-assessoria{
-    background-color: #fff;
-    width: 322px;
-    height: 381px;
-    border-radius: 3px;
-}
-#titulo-servicos{
-    display: block;
-    letter-spacing: 8%;
-    width: 938px;
-    height: 112px;
-    line-height: 70px;
-    font-family: "Inter", sans-serif;
-    font-weight: 530;
-    font-size: 40px;
-    color: #fff;
-}
-
-
 
 /*MEDIA QUERIES DAS TELAS---------------------------------------------*/
 
-@media (max-width:734px){
-    
+@media (max-width:945px){
+    main{
+        margin-top: 100px;
+    }
     
     #navigation{
         display: none;
@@ -169,6 +134,9 @@ input:hover{
         margin: 3px 0px;
         background-color: #3B3748;
     }
+    img{
+        width: 140px;
+    }
 
 
     /*CORPO PRINCIPAL DA PÁGINA>>>>>>>>>>>>>>>>>*/
@@ -191,27 +159,17 @@ input:hover{
 }
 
 @media (min-width: 735px) and (max-width: 1002px){
-    
-    #menu{
-        display: flex;
-        justify-content: space-between;
+    header{
+        height: 100px;
     }
-    nav ul li{
-        display: block;
-        padding: 5px 12px;
+    main{
+        margin-top: 100px;
     }
-
-
-    #banner{
-        margin: 80px;
-    }
-}
-
-@media (max-width: 1003px){
     menu{
-        display: inline-block;
+        display: inline-flex;
     }
-    nav ul li{
+    nav ul li a{
+        display: flex;
         font-size: 12px;
     }
     nav{
@@ -223,11 +181,17 @@ input:hover{
     }
 }
 
-@media (min-width: 1004px) and (max-width: 1400px){
+@media (min-width: 1003px) and (max-width: 1400px){
+    header{
+        height: 120px;
+    }
+    main{
+        margin-top: 120px;
+    }
     menu{
         display: inline-block;
     }
-    nav ul li{
+    nav ul li a{
         font-size: 13px;
     }
     nav{
