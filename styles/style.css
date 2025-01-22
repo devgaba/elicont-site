@@ -11,7 +11,10 @@ body{
 }
 /*CABEÇALHO-------------------------------------------------------*/
 header{
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;background-color: #fff;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -55,19 +58,19 @@ nav ul li:hover{
 
 /*CORPO PRINCIPAL DA PÁGINA------------------------------------------*/
 main{
-    display: flex;
-    justify-content: center;
+    margin-top: 150px;
     width: 100%;
-    background-image: url(../images/background-home.png);
-    background-size: cover;
 }
 #background-home{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
+    height: 880px;
     color: aliceblue;
     font-family: "Inter", sans-serif;
+    width: 100%;
+    background-image: url(../images/background-home.png);
+    background-size: cover;
 }
 #banner{
     margin: 100px;
@@ -95,6 +98,45 @@ input{
 input:hover{
     color: black;
     background-color: aliceblue;
+}
+
+
+/*SECTION - SERVICOS*/
+.servicos{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    width: 100%;
+    height: 880px;
+    background-color: #3B3748;
+}
+#area-assessorias{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#cards{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-assessoria{
+    background-color: #fff;
+    width: 322px;
+    height: 381px;
+    border-radius: 3px;
+}
+#titulo-servicos{
+    display: block;
+    letter-spacing: 8%;
+    width: 938px;
+    height: 112px;
+    line-height: 70px;
+    font-family: "Inter", sans-serif;
+    font-weight: 530;
+    font-size: 40px;
+    color: #fff;
 }
 
 
