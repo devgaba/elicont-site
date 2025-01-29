@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 /*================================== CABEÇALHO ======================================*/
 header{
     width: 100%;
@@ -84,7 +85,7 @@ main{
 }
 .area_cards{
     display: flex;
-    width: 70%;
+    width: 80%;
     height: 70%;
 }
 
@@ -93,11 +94,16 @@ main{
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin: 20px;
+    margin: 15px;
     border-radius: 3px;
     box-shadow: 2px 2px 10px #000000;
 }
 
+.area_cards a{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+}
 
 /*----- BACKGROUND CARDS (IMAGES AND SHADOW)*/
 
@@ -139,19 +145,22 @@ main{
 }
 
 .info h1{
-
+    display: block;
+    width: 100%;
     text-align: center;
     letter-spacing: 82%;
     font-size: 30px;
     line-height: 40px;
     font-weight: 400;
     height: 50%;
-    padding-top: 50px;
+    padding-top: 90px;
 }
 .info p{
+    display: block;
     text-align: center;
+    height: 100px;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 100;
 }
 /*=============================== FOOTER =================================*/
 
@@ -206,23 +215,28 @@ main{
     /*MAIN>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
     
     main{
+        height: 120vh;
         justify-content: flex-start;
     }
     .area_cards{
+        margin-top: 20px;
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
     }
 
     .title{
         font-size: 25px;
         line-height: 30px;
+        padding-top: 20px;
     }
 
     .info h1{
+        margin-top: 15px;
         font-size: 20px;
         line-height: 25px;
     }
     .info p{
+        margin-top: 25px;
         font-size: 15px;
     }
     .cards{
